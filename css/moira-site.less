@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-color: @black;
+    background-color: @white;
     font-family: "Fira Sans", sans-serif;
     font-size: 1.4rem;
 }
@@ -41,9 +41,9 @@ h2 {
 }
 
 table {
-    margin: 36px auto;
+    margin: 24px auto;
     max-width: 320px;
-    width: ~"calc(100% - 72px)";
+    width: ~"calc(100% - 48px)";
 }
 
 td {
@@ -94,6 +94,10 @@ img {
     }
 }
 
+p.small {
+    font-size: 1.4rem;
+}
+
 @keyframes loading-please-wait {
     from {
         opacity: 0;
@@ -140,7 +144,7 @@ img {
 }
 
 [class*="col"] {
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -239,11 +243,6 @@ img {
         overflow: auto;
         padding: 25px;
         text-align: center;
-
-        @media screen and (max-width: 480px) {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
     }
 
     button {
@@ -381,6 +380,14 @@ img {
         }
     }
 
+    .menu-item-photo {
+        text-align: center;
+
+        .small {
+            margin-top: -6px;
+        }
+    }
+
     .legend-disc {
         border: 2px @black solid;
         display: flex;
@@ -497,17 +504,17 @@ img {
     background-image: url('../images/moira-sushi-plate-maguro-bg-cut.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-bottom: 280px;
+    padding-bottom: 316px;
+    max-width: 1600px;
 
     .contact-block {
         text-align: center;
-        width: 100%;
     }
 
     img {
-        margin: 24px auto;
+        margin: 48px auto 24px;
         max-width: 320px;
-        width: 60%;
+        width: 72%;
     }
 
     .address-container {
@@ -540,7 +547,6 @@ img {
 }
 
 /**** WORKING ****/
-#branding,
-#menu {
+#branding {
     display: none;
 }
