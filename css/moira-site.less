@@ -90,7 +90,7 @@ img {
     max-width: 100%;
 
     &.with-border {
-        border: 6px @white solid;
+        border: 4px @white solid;
     }
 }
 
@@ -227,7 +227,7 @@ p.small {
 
     h4 {
         font-weight: normal;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     .moira-note {
@@ -247,11 +247,11 @@ p.small {
 
     button {
         background-color: @black;
-        border: none;
+        border: 1px @black solid;
         color: @white;
         cursor: pointer;
         font-size: 2.8rem;
-        font-weight: 100;
+        font-weight: 300;
         line-height: 1;
         margin: 5px 2px;
         min-width: 125px;
@@ -264,10 +264,9 @@ p.small {
             border-top: 1px @white solid;
             display: block;
             font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 6px;
-            padding-top: 5px;
-            text-align: right;
+            font-weight: 500;
+            margin-top: 4px;
+            padding-top: 6px;
             text-transform: uppercase;
             .transition;
             transition-property: border-color;
@@ -277,10 +276,26 @@ p.small {
         &.btn-lunch {
             background-color: @white;
             color: @black;
+
+            span {
+                border-color: @black;
+            }
+
+            &:hover {
+
+                span {
+                    border-color: @white;
+                }
+            }
+        }
+
+        &.btn-dinner {
+            border-color: @white;
         }
 
         &:hover {
             background-color: @red;
+            border-color: @red;
             color: @white;
         }
 
@@ -295,23 +310,14 @@ p.small {
 
     .split-section {
         float: left;
+        padding: 12px;
         text-align: left;
         width: 50%;
 
         @media screen and (max-width: 799px) {
-            padding-left: 50px;
-            padding-right: 50px;
-            width: 100%;
-        }
-
-        @media screen and (max-width: 599px) {
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-
-        @media screen and (max-width: 499px) {
             padding-left: 0;
             padding-right: 0;
+            width: 100%;
         }
     }
 
@@ -381,18 +387,28 @@ p.small {
     }
 
     .menu-item-photo {
+        margin-top: 24px;
         text-align: center;
 
         .small {
-            margin-top: -6px;
+            color: @gray;
+            margin-top: -8px;
+        }
+
+        &.full-frame {
+            margin: 24px;
+
+            .small {
+                margin-top: 8px;
+            }
         }
     }
 
     .legend-disc {
-        border: 2px @black solid;
+        border: 4px @black solid;
         display: flex;
         flex-wrap: wrap;
-        margin: 45px 30px;
+        margin: 48px 24px 0;
 
         p:last-of-type {
           margin-bottom: 0;
@@ -500,21 +516,38 @@ p.small {
 }
 
 #business-hours {
-    background-color: @white;
-    background-image: url('../images/moira-sushi-plate-maguro-bg-cut.jpg');
+    background-image: url('../images/bamboo-bg.svg');
     background-repeat: no-repeat;
-    background-position: center bottom;
-    padding-bottom: 316px;
-    max-width: 1600px;
+    background-position: right bottom;
+    background-size: 36%;
+    padding-bottom: 96px;
+
+    @media screen and (max-width: 768px) {
+        background-size: 72%;
+    }
+    
+    .row {
+        margin: auto;
+        max-width: 1280px;
+    }
 
     .contact-block {
-        text-align: center;
+        padding: 48px;
+    }
+
+    .content-block {
+        padding: 24px;
     }
 
     img {
-        margin: 48px auto 24px;
-        max-width: 320px;
-        width: 72%;
+        max-width: 480px;
+        width: 100%;
+
+        &.logo-trademark {
+            margin: 48px auto 24px;
+            max-width: 320px;    
+            width: 84%;
+        }
     }
 
     .address-container {
@@ -537,16 +570,11 @@ p.small {
     }
 
     [class*="col"] {
-        padding: 24px;
+        margin: unset;
     }
 
     .box-label {
         float: left;
         margin-left: -60px;
     }
-}
-
-/**** WORKING ****/
-#branding {
-    display: none;
 }
