@@ -41,14 +41,14 @@ h2 {
 }
 
 table {
-    @media screen and (max-width: 480px) {
-        font-size: 1.4rem;
-        width: 100%;
-    }
+    margin: 36px auto;
+    max-width: 320px;
+    width: ~"calc(100% - 72px)";
 }
 
 td {
-    padding: 3px 10px;
+    line-height: 1.4;
+    padding: 3px;
 
     h2 {
         border-bottom: 1px @black solid;
@@ -57,15 +57,18 @@ td {
     }
 
     span {
-        border: 1px @black solid;
         display: inline-block;
+        vertical-align: middle;
+    }
+
+    span.box-label {
+        border: 1px @black solid;
         font-size: 1rem;
         margin-right: 5px;
         width: 50px;
-        padding: 3px 5px;
+        padding: 3px 5px 1px;
         text-align: center;
         text-transform: uppercase;
-        vertical-align: middle;
 
         &.closed {
             background-color: @white;
@@ -91,14 +94,6 @@ img {
     }
 }
 
-p.loader {
-    animation-duration: 3s;
-    animation-name: loading-please-wait;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    color: @white;
-}
-
 @keyframes loading-please-wait {
     from {
         opacity: 0;
@@ -114,14 +109,14 @@ p.loader {
 }
 
 .starburst {
-    background-color: @black;
-    border-color: @black;
+    background-color: @red;
     color: @white;
     display: inline-block;
     font-size: 1.4rem;
     font-weight: bold;
-    height: 54px;
     line-height: 1.4;
+    margin-right: 5px;
+    padding: 6px;
     text-align: center;
     vertical-align: middle;
     width: 56px;
@@ -184,8 +179,17 @@ p.loader {
         max-width: 400px;
         width: 65%;
     }
+}
 
+@keyframes from-nothing {
     
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 #menu {
@@ -458,38 +462,6 @@ p.loader {
     }
 }
 
-#business-hours {
-    background-color: @white;
-
-    .address-container,
-    .phone {
-        text-align: center;
-    }
-
-    .address-container {
-        border-bottom: 1px @black solid;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        animation-delay: 1s;
-    }
-
-    .phone {
-        animation-delay: 1.5s;
-    }
-
-    address {
-        margin-bottom: 0;
-    }
-
-    a[href^="tel:"] {
-        color: @black;
-    }
-
-    [class*="col"] {
-        margin: 48px;
-    }
-}
-
 #more-info {
     background: url("../images/moira-sushi-misc-2962-bw.jpg") no-repeat right;
     background-size: cover;
@@ -503,6 +475,16 @@ p.loader {
         padding-top: 30px;
     }
 
+    .footer {
+        border-top: 1px @black solid;
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        margin-top: 25px;
+        padding-right: 10px;
+        padding-top: 5px;
+        text-align: right;
+    }
+
     [class*="col"] {
         background-color: @white;
         color: @black;
@@ -510,43 +492,50 @@ p.loader {
     }
 }
 
-#contact-us {
-    background-color: @black;
-    color: @white;
-}
+#business-hours {
+    background-color: @white;
+    background-image: url('../images/moira-sushi-plate-maguro-bg-cut.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 280px;
 
-.note {
-    display: flex;
-    flex: auto;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-
-    span {
-        width: 50%;
+    .contact-block {
+        text-align: center;
+        width: 100%;
     }
 
-    sup {
+    img {
+        margin: 24px auto;
+        max-width: 320px;
+        width: 60%;
+    }
+
+    .address-container {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .phone {
+        color: @red;
+        font-size: 2.4rem;
         font-weight: bold;
     }
-}
 
-.footer {
-    border-top: 1px @black solid;
-    font-size: 1.4rem;
-    margin-bottom: 0;
-    margin-top: 25px;
-    padding-right: 10px;
-    padding-top: 5px;
-    text-align: right;
-}
-
-@keyframes from-nothing {
-    from {
-        opacity: 0;
+    address {
+        margin-bottom: 0;
     }
 
-    to {
-        opacity: 1;
+    a[href^="tel:"] {
+        color: @black;
+    }
+
+    [class*="col"] {
+        padding: 24px;
+    }
+
+    .box-label {
+        float: left;
+        margin-left: -60px;
     }
 }
 
