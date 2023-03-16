@@ -1,0 +1,464 @@
+@charset "utf-8";
+/* CSS Document by Ray Villaraza - 10/12/2012 */
+
+@font-face {
+    font-family:HelveticaNeueLTPro-ThEx;
+    src: url('HelveticaNeueLTPro-ThEx.otf');
+    font-weight:100;
+}
+
+@font-face {
+    font-family:ArchitectsDaughter;
+    src: url('ArchitectsDaughter_0.ttf');
+    font-weight:200;
+}
+
+@font-face {
+    font-family:Sakura;
+    src: url('SAKURA__0.TTF');
+    font-weight:200;
+}
+
+body {
+	background:url(../images/background.png);
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:1.3;
+}
+
+a:link, a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration:underline;
+}
+
+h1 {
+	margin:0 0 10px;
+	font-family:HelveticaNeueLTPro-ThEx, Arial, Helvetica, san-serif;
+	text-transform:uppercase;
+	font-size:1.5em;
+}
+
+h2 {
+	margin:5px 0 0;
+	font-family:ArchitectsDaughter, Arial, Helvetica, sans-serif;
+	font-size:1;
+}
+
+p {
+	margin:15px 0 0;
+}
+
+sup {
+	font-size:.8em;
+	font-weight:normal;
+	vertical-align:super;
+}
+
+.right {
+	text-align:right;
+}
+
+.left {
+	text-align:left;
+}
+
+.center {
+	text-align:center;
+}
+
+#wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+#wrapper > div {
+	overflow:auto;
+}
+
+#branding {
+	padding:75px 0 0;
+	height:300px;
+}
+
+h1#logo {
+	height:300px;
+	margin:0;
+	background:url(../images/moira-logo.png) center center no-repeat;
+	text-indent:-9999px;
+}
+
+.menu {
+	width:960px;
+	height:115px;
+	padding:50px 0;
+}
+
+.menu ul {
+	width:800px;
+	margin:0 auto;
+}
+
+.menu ul li {
+	float:left;
+}
+
+.menu a:link, .menu a:visited {
+	display:block;
+	width:140px;
+	height:95px;
+	padding:10px;
+	text-indent:-9999px;
+	background:url(../images/nav-items.png) 0 0 no-repeat;
+	filter:alpha(opacity=80);
+	opacity:0.80;
+}
+
+.menu a:hover, .menu a:focus, .menu a:active {
+	filter:alpha(opacity=100);
+	opacity:1.0;
+}
+
+.menu a.nav-izakaya:link {background-position:-161px;}
+.menu a.nav-makimono:link {background-position:-320px;}
+.menu a.nav-sushi:link {background-position:-480px;}
+.menu a.nav-gallery:link {background-position:-640px;}
+.menu a.nav-about-us:link {background-position:-800px;}
+
+a.nav-home:link, a.nav-home:visited {
+	display:block;
+	width:140px;
+	height:70px;
+	margin:40px auto 0;
+	padding:10px;
+	text-indent:-9999px;
+	background:url(../images/nav-items.png) 0 0 no-repeat;
+	filter:alpha(opacity=80);
+	opacity:0.80;
+}
+a.nav-home:hover, a.nav-home:focus, a.nav-home:active {
+	filter:alpha(opacity=100);
+	opacity:1.0;
+}
+
+
+#about-us {
+	background:#000;
+	padding:75px 100px;
+}
+
+#about-us h1, #about-us p {
+	color:#fff;
+}
+
+#about-us h2 {
+	color:#e00032;
+}
+
+#about-us p {
+	max-width:65%;
+	margin:0 0 25px;
+}
+
+#about-us a {
+	font-family:ArchitectsDaughter,Arial,Helvetica,sans-serif;
+	font-size:.8em;
+	color:#E00032;
+}
+
+#about-us a:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+#about-us img {
+	float:left;
+	margin:-6px 10px 0 0;
+}
+
+#contact-us {
+	overflow:auto;
+	padding:50px;
+	background:#670319;
+}
+
+#contact-us h1 {
+	color:#fff;
+	text-indent:50px;
+}
+
+#contact-us h2 {
+	color:#e00032;
+	margin:20px 0 0;
+	text-align:center;
+}
+
+#contact-us #contact, #contact-us #business-hours, #contact-us #map {
+	float:left;
+	width:245px;
+	padding:0 10px 20px;
+	text-align:center;
+}
+
+#contact-us #map {
+	display:none;
+	background:#fff;
+	width:330px;
+	padding:20px 0;
+	box-shadow:0 2px 4px #000000;
+}
+
+#contact-us a {
+	color:#fbaf5d;
+}
+
+#contact > div {
+	padding:5px 0;
+}
+
+#contact .phone {
+	font-weight:bold;
+	font-size:20px;
+}
+
+#contact-us table {
+	margin:0 auto;
+}
+
+#contact-us table tr td {
+	padding:0 5px 5px;
+}
+
+#contact-us table tr td.left {
+	text-transform:uppercase;
+	font-size:.7em;
+}
+
+#contact-us #contact-form {
+	float:left;
+	padding:0 10px 20px;
+	width:300px;
+}
+
+#contact-us #contact-form form {
+	display:block;
+	overflow:auto;
+	margin:15px 0 0;
+}
+
+#contact-us #contact-form label {
+	float:left;
+	font-size:.8em;
+	padding:5px;
+	margin:5px;
+	text-align:right;
+	text-transform:uppercase;
+	width:60px;
+}
+
+#contact-us #contact-form input {
+	float:left;
+	margin:5px;
+	padding:5px;
+	font-size:.7em;
+	color:#999;
+	width:190px;
+	border:2px #fff solid;
+	border-radius:2px;
+}
+
+#contact-us #contact-form input[type="submit"] {
+	float:left;
+	margin:5px 0 0 115px;
+	color:#fff;
+	width:145px;
+	font-weight:bold;
+	border:none;
+	box-shadow:0 2px 4px #333;
+	display:block;
+	padding:10px;
+	text-transform:uppercase;
+	background:#E00032;
+	cursor:pointer;
+}
+
+#contact-us #contact-form input[type="submit"]:hover {
+	background:#ff0039;
+}
+
+#izakaya sup, #makimono sup, #sushi sup, #happy-hour sup, #footer p sup {
+	font-family:Sakura;
+}
+
+table tr td {
+	padding:5px 20px;
+	vertical-align:middle;
+}
+
+table tr td.menu-item-name {
+	width:150px;
+	text-align:right;
+}
+
+table tr td.menu-item-name, table tr td.menu-item-price {
+	font-weight:bold;
+}
+
+#izakaya {
+	padding:50px;
+	background:url('../images/fan-bg.jpg') right top no-repeat;
+}
+
+#izakaya h1 {
+	color:#e36c0a;
+	margin:0 0 25px;
+	text-indent:20px;
+}
+
+#izakaya a {
+	float:right;
+	clear:both;
+}
+
+#sides {
+	padding:75px;
+	background:url(../images/about-us-bg.jpg) center center no-repeat;
+}
+
+#sides h1 {
+	color:#000;
+	margin:15px 0;
+	float:right;
+}
+
+#sides table tr {
+	float:left;
+	width:230px;
+}
+
+#sides table tr td {
+	padding:5px 20px 5px 0;
+}
+
+#sides .menu-item-name {
+	font-weight:normal;
+}
+
+#sushi {
+	padding:50px;
+	background:url(../images/sushi-bg.jpg) left top no-repeat;
+	overflow:auto;
+}
+
+#sushi h2 {
+	margin:0 0 25px;
+	color:#e00032;
+}
+
+#sushi a {
+	float:right;
+	clear:both;
+}
+
+#sushi table {
+	float:left;
+	width:300px;
+}
+
+#sushi table tr {
+	height:35px;
+}
+
+#sushi table tr td {
+	padding:5px 20px;
+}
+
+#sushi .menu-item-name {
+	width:160px;
+}
+
+#sushi table tr td.menu-item-name span {
+	font-weight:normal;
+	font-size:.7em;
+	text-transform:uppercase;
+}
+
+#sushi table tr td.menu-item-price {
+	width:25px;
+	padding:0;
+}
+
+#makimono {
+	padding:100px;
+	background:#e36c0a;
+}
+
+#makimono h1 {
+	margin:0 0 25px;
+	color:#000;
+}
+
+#makimono a {
+	float:right;
+}
+
+#makimono img {
+	margin:40px 0;
+	width:730px;
+}
+
+#gallery {
+	padding:75px;
+	background:url(../images/happy-hour-bg.jpg) center center no-repeat;
+	color:#000;
+}
+
+#gallery h1 {
+	margin:0 0 25px;
+	color:#fff;
+}
+
+#gallery a {
+	float:right;
+	clear:both;
+}
+
+#gallery ul {
+	width:600px;
+}
+
+#gallery ul li {
+	float:left;
+	margin:10px;
+}
+
+#gallery ul li a {
+}
+
+#gallery ul li a img {
+	display:block;
+	width:100px;
+	height:100px;
+	border:10px #fff solid;
+	background:#ccc;
+	box-shadow:0px 2px 4px #666;
+	-moz-box-shadow:0px 2px 4px #666;
+	-webkit-box-shadow:0px 2px 4px #666;
+	-o-box-shadow:0px 2px 4px #666;
+}
+
+#footer {
+	background:#000;
+	font-size:.8em;
+	color:#fff;
+	padding:50px;
+	margin:0 0 50px;
+	text-align:center;
+}
+
+#footer p {
+	margin:0;
+}

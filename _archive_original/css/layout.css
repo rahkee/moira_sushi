@@ -1,0 +1,196 @@
+/* Begin Moira Sushi CSS */
+/* Author: Ray Villaraza */
+/* www.raydesigned.com */
+
+body {
+	background:#000 url(../img/moira_bg.jpg) center -75px no-repeat;
+	margin:75px 0px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#fff;
+	}
+	
+/* General Formatting */
+img {
+	border:0px;
+	}
+	
+h1 {
+	font-size:13px;
+	font-weight:bold;
+	color:#8d0120;
+	margin-bottom:2px;
+	}
+	
+.bold {
+	font-weight:bold;
+	}
+	
+.italics {
+	font-style:italic;
+	}
+	
+a {
+	font-size:11px;
+	font-weight:bold;
+	color:#8d0120;
+	text-decoration:none;
+	}
+a:hover {
+	color:#fff;
+	text-decoration:underline;
+	}
+
+/* Centering Element */
+.div_wrap {
+	width:100%;
+	}
+	
+/* Main Frame */
+.div_content {
+	background:url(../img/trans_bg.png);
+	width:789px;
+	height:462px;
+	margin:auto;
+	_filter:alpha(opacity=85);
+	/*
+	-moz-opacity:.35;
+	opacity:.35;
+	*/
+	}
+	
+/* Homepage Logo */
+.div_content_logo {
+	width:100%;
+	height:350px;
+	margin:auto;
+	padding-top:50px;
+	float:left;
+	}
+	
+/* Left Content */	
+.div_content_left {
+	width:509px;
+	height:320px;
+	padding:40px;
+	float:left;
+	text-align:left;
+	line-height:16px;
+	position:relative;
+	vertical-align:middle;
+	}
+	
+/* Right Content */
+.div_content_right {
+	width:160px;
+	height:360px;
+	padding:20px;
+	float:left;
+	text-align:left;
+	}
+	
+/* Right Navigation Links */
+#moira_nav {
+	height:200px;
+	width:159px;
+    position:relative;
+	}
+#moira_nav li {
+	list-style:none;
+	}
+#moira_nav li, #moira_nav a {
+    height:50px; display:block;
+	}
+	
+#home a {
+	background:url(../img/moira_btn_home.png) 0px 0px no-repeat;
+	}
+#menu a {
+	background:url(../img/moira_btn_menu.png) 0px 0px no-repeat;
+	}
+#about a {
+	background:url(../img/moira_btn_about.png) 0px 0px no-repeat;
+	}
+#contact a {
+	background:url(../img/moira_btn_contact.png) 0px 0px no-repeat;
+	}
+
+#home a:hover {
+    background:url(../img/moira_btn_home.png) 0 -50px no-repeat;
+	}
+#menu a:hover {
+    background:url(../img/moira_btn_menu.png) 0 -50px no-repeat;
+	}
+#about a:hover {
+    background:url(../img/moira_btn_about.png) 0 -50px no-repeat;
+	}
+#contact a:hover {
+    background:url(../img/moira_btn_contact.png) 0 -50px no-repeat;
+	}
+	
+/* Moira Menu */
+#moira_menu {
+	width:100%;
+	}
+	
+#moira_menu .menu_item {
+	font-weight:bold;
+	text-align:right;
+	padding:0px;
+	}
+	
+#moira_menu .menu_price {
+	width:5%;
+	color:#8d0120;
+	font-weight:bold;
+	padding:0px 0px 0px 5px;
+	}
+	
+#moira_menu .menu_desc {
+	font-weight:normal;
+	text-align:right;
+	vertical-align:top;
+	padding:0px 0px 10px 0px;
+	}
+	
+/* Footer */
+.div_content_footer {
+	color:#fff;
+	margin:20px 5px 5px 5px;
+	text-align:center;
+	vertical-align:middle;
+	}
+
+/* Footer Links */
+.div_content_footer a {
+	color:#8d0120;
+	font-weight:bold;
+	text-decoration:none;
+	margin-left:20px;
+	margin-right:20px;
+	}
+.div_content_footer a:hover {
+	color:#fff;
+	}
+
+/* Disclaimer */
+.div_disclaimer {
+	font-size:9px;
+	color:#333;
+	margin:10px 5px 5px 5px;
+	text-align:center;
+	vertical-align:middle;
+	}
+
+/* Disclaimer Links */
+.div_disclaimer a {
+	font-size:9px;
+	color:#8d0120;
+	font-weight:bold;
+	text-decoration:none;
+	}
+.div_disclaimer a:hover {
+	color:#fff;
+	}
